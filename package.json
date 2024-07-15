@@ -4,8 +4,11 @@
   "license": "MIT",
   "scripts": {},
   "private": true,
-  "dependencies": {},
+  "dependencies": {
+    "@nx/nest": "19.4.3"
+  },
   "devDependencies": {
+    "@nestjs/schematics": "^10.0.1",
     "@nx/js": "19.4.3",
     "@nx/workspace": "19.4.3",
     "nx": "19.4.3"
