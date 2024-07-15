@@ -1,0 +1,24 @@
+{
+  "name": "email-microservice",
+  "$schema": "../../../node_modules/nx/schemas/project-schema.json",
+  "sourceRoot": "apps/backend/email-microservice/src",
+  "projectType": "application",
+  "tags": [],
+  "targets": {
+    "serve": {
+      "executor": "@nx/js:node",
+      "defaultConfiguration": "development",
+      "options": {
+        "buildTarget": "email-microservice:build"
+      },
+      "configurations": {
+        "development": {
+          "buildTarget": "email-microservice:build:development"
+        },
+        "production": {
+          "buildTarget": "email-microservice:build:production"
+        }
+      }
+    }
+  }
+}
